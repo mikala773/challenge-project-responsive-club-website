@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="images/x-icon" href="lotus-logo.ico">
+    <!--need to add shorter version of google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alice&family=Eagle+Lake&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Lotus Yoga Club</title>
+</head>
+
+<!--BANNER-->
+<body>
+    <div id="banner">
+        <div class="content">
+            <h1>Lotus Yoga Club</h1>
+            <!--Not sure if I need to put the class here-->
+            <button class="button"><a>Login / Join Now</a></button>
+        </div>
+    </div>
+    <!--Nav-->
+    <nav>
+        <!--Desktop Nav-->
+        <div id="desktop">
+            <a id="logo" href="#">Lotus Yoga Club</a>
+            <ul>
+                <li><a href="#resources-section">Classes</a></li>
+                <li><a href="#gallery-section">Gallery</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Follow us<img id="icon" src="images/instagram.png" alt="Instagram logo."/></a></li>
+                <!--Desktop Button: only will show on tablets-->
+                <li><button class="button"><a>Login</a></button></li>
+            </ul>
+        </div>
+        <!--Mobile Nav-->
+        <div id="mobile">
+            <ul>
+                <li><a href="#top"><img src="images/ic-logo.svg" alt="Home Logo."/></a></li>
+                <li><a href="#resources-section"><img src="images/ic-about-us.svg" alt="Classes Logo."/></a></li>
+                <li><a href="#gallery-section"><img src="images/ic-product-detail.svg" alt="Gallery Logo." /></a></li>
+                <li><button class="button"><a>Login</a></button></li>
+            </ul>
+        </div>
+    </nav>
+    <!--COMPANY DESCRIPTION-->
+    <section id="company-description" class="dark-blue-background">
+
+        <span class="mobile-banner">
+            Lotus Yoga Club
+        </span>
+        <span class="content">
+            Embrace mindfulness, holistic wellness, and the <span class="bold">journey to self-discovery.</span>
+        </span>
+
+    </section>
+    <!--RESOURCES-->
+    <section id="resources-section" class="section dark-background">
+        <h2 class="section-start">Classes</h2>
+        <ul>
+            <li class="card">
+                <div class="image-container"><img src="images/beach.jpg" alt="People doing yoga on the beach"/>
+                </div>
+                <div class="content">
+                    <h3 class="resource-name">Beach Yoga</h3>
+                    <span class="resource-description">Sink your toes into the warm sands as our experienced instructors
+                        guide you through a gentle and invigorating yoga practice against the backdrop of the endless
+                        horizon.</span>
+                </div>
+            </li>
+            <li class="card">
+                <div class="image-container"><img src="images/lecture.jpg" alt="Yoga lecture hall" />
+                </div>
+                <div class="content">
+                    <h3 class="resource-name">Yoga Philosophy Lectures</h3>
+                    <span class="resource-description">These lectures offer a gateway to a more profound understanding
+                        of the holistic philosophy that has inspired and guided yogis for centuries.</span>
+                </div>
+            </li>
+            <li class="card">
+                <div class="image-container"><img src="images/meditation.jpg" alt="People meditating."/>
+                </div>
+                <div class="content">
+                    <h3 class="resource-name">Mindful Yoga</h3>
+                    <span class="resource-description">Rooted in the principles of mindfulness, these sessions offer a
+                        holistic approach to yoga, integrating breath, movement, and meditation.</span>
+                </div>
+            </li>
+            <li class="card">
+                <div class="image-container"><img src="images/training.jpg" alt="Training for yoga."/></div>
+                <div class="content">
+                    <h3 class="resource-name">Yoga Teacher Training Intensive
+                    </h3>
+                    <span class="resource-description">This immersive program is designed for passionate individuals
+                        aspiring to become certified yoga instructors.</span>
+                </div>
+            </li>
+            <li class="card">
+                <div class="image-container"><img src="images/soundbath.jpg" alt="Sound bath singing bowl." />
+                </div>
+                <div class="content">
+                    <h3 class="resource-name">Sound Bath Yoga</h3>
+                    <span class="resource-description">The union of meditative sound and intentional movement creates a
+                        transformative experience, fostering deep relaxation, heightened awareness, and a profound sense
+                        of inner balance.</span>
+                </div>
+            </li>
+            <li class="card">
+                <div class="image-container"><img src="images/hiking.jpg" alt="Group hiking."/>
+                </div>
+                <div class="content">
+                    <h3 class="resource-name">Hike & Yoga</h3>
+                    <span class="resource-description">This unique class offers the perfect blend of cardiovascular
+                        exercise, mindful movement, and deep relaxation, providing a holistic wellness experience in the
+                        heart of nature.</span>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!--GALLERY SECTION-->
+    <section id="gallery-section" class="section light-background">
+        <h2 class="section-start">Gallery</h2>
+        <div class="images">
+            <div class="image-container">
+                <img src="images/gallery-1.jpg" alt="People doing yoga in the park."/>
+            </div>
+            <div class="image-container">
+                <img src="images/gallery-2.jpg" alt="Woman meditating on beach."/>
+            </div>
+            <div class="image-container">
+                <img src="images/gallery-3.jpg" alt="People hiking."/>
+            </div>
+            <div class="image-container">
+                <img src="images/gallery-4.jpg" alt="People doing yoga standing in water in a lake."/>
+            </div>
+            <div class="image-container">
+                <img src="images/gallery-5.jpg" alt="Incense burning."/>
+            </div>
+        </div>
+    </section>
+
+    <!--QUOTE SECTION-->
+
+    <section id="quote-section" class="purple-background italic">
+        <span id="quote">"Every breath brings serenity, and each pose is a step towards inner peace."
+        </span>
+        <div class="image-container">
+            <img src="images/lotus-logo.png" alt="Lotus flower."/>
+        </div>
+    </section>
+
+</body>
+<!--Footer-->
+<footer id="footer" class="dark-blue-background">
+    <span>© 2023 Creative Bubble Collective, All Rights Reserved</span>
+    <span>Founded in Chicago</span>
+</footer>
+
+</html>

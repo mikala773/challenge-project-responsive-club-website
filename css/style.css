@@ -1,0 +1,513 @@
+/*UNIVERSAL STYLES*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.button a {
+    color: #f5f5f5;
+}
+
+.dark-blue-background {
+    background-color: #3a426dff;
+    color: #f5f5f5;
+    background-image: linear-gradient(#6977c6, #3a426dff);
+}
+
+.dark-background {
+    background-color: rgb(0, 0, 0);
+    background-image: radial-gradient(#434343ff, #302f2f, #000000);
+    color: #f5f5f5;
+}
+
+.light-background {
+    background-color:#f5f5f5;
+    background-image: radial-gradient(#f5f5f5, #e2e2e2, #e2e1e1);
+    color: #000000;
+}
+
+.purple-background {
+    background-color: #baa8c1ff;
+    color: #000000;
+    background-image: linear-gradient(#baa8c1ff, rgb(169, 124, 187));
+}
+
+/*BANNER*/
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 350px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../images/lotus-landing-page.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #000000;
+    color: #f5f5f5;
+}
+
+#banner .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 95%;
+}
+
+#banner h1 {
+    font-family: 'Eagle Lake', serif;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px #3a426dff, 0 0 1em #f5f5f5, 0 0 0.2em #000000;
+}
+
+#banner .button {
+    background-color: #a64d79ff;
+    color: #f5f5f5;
+    font-family: 'Alice', serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    text-align: center;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#banner .button:hover {
+    background-color: rgb(230, 105, 168);
+    color: #f5f5f5;
+}
+
+#banner .button:active {
+    background-color: #a31b5f;
+    color: #f5f5f5;
+}
+
+/*TABLET BANNER*/
+@media only screen and (max-width: 760px) {
+    #banner .button {
+        display: none;
+    }
+}
+
+/*MOBILE BANNER*/
+
+@media only screen and (max-width: 450px) {
+    #banner {
+        display: none;
+    }
+}
+
+/*NAV*/
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    background-color: #f5f5f5;
+    height: 70px;
+    width: 100%;
+    min-width: 340px;
+}
+
+#logo {
+    flex: 1;
+    font-family: 'Eagle Lake', serif;
+    color: #a64d79ff;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    padding-left: 20px;
+}
+
+#logo:hover {
+    color: #a31b5f; 
+}
+
+#desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;   
+}
+
+#desktop ul {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    font-size: .75rem;
+    white-space: nowrap;
+}
+
+#desktop ul li {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+#desktop ul li a:hover {
+    color: #3a426dff;   
+    
+}
+
+#desktop .button {
+    display: none;
+}
+
+#desktop .button a:hover{
+    color: #f5f5f5;
+}
+
+
+nav #icon {
+    width: 1.5rem;
+    padding-left: .75rem;
+  }
+  
+
+#mobile {
+    display: none;
+}
+
+/*TABLET NAV*/
+
+@media only screen and (max-width: 760px) {
+    #logo {
+        font-size: 1rem;
+    }
+
+    #desktop .button {
+        display: inline-block;
+        flex: 1;
+        background-color: #a64d79ff;
+        color:#f5f5f5;
+        font-family: 'Alice', serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding: 5px 5px;
+        text-align: center;
+        width: 100px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    #desktop .button:hover {
+        background-color: rgb(230, 105, 168);
+        color: #f5f5f5;
+    }
+
+    #desktop .button:active {
+        background-color: #a31b5f;
+        color: #f5f5f5;
+    }
+}
+
+/*MOBILE NAV*/
+
+@media only screen and (max-width: 450px) {
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+    }
+
+    #mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        width: 100%;
+    }
+
+    #mobile ul li {
+        padding: 3px;
+    }
+
+    #mobile .button {
+        display: inline-block;
+        flex: 1;
+        background-color: #a64d79ff;
+        color: #f5f5f5;
+        font-family: 'Alice', serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding: 5px 5px;
+        text-align: center;
+        width: 100px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    #mobile .button:hover {
+        background-color: rgb(230, 105, 168);
+        color: #f5f5f5;
+    }
+
+    #mobile .button:active {
+        background-color: #a31b5f;
+    }
+}
+
+/*COMPANY DESCRIPTION*/
+#company-description {
+    height: 150px;
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 0;
+}
+
+#company-description .mobile-banner {
+    display: none;
+}
+
+#company-description .content {
+    font-size: 1.15rem;
+    font-weight: 300;
+    padding: 0 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+@media only screen and (max-width: 760px) {
+    #company-description .content {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #company-description {
+        background-image: url(../images/lotus-landing-page.jpg);
+        background-color: #000000;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #company-description .mobile-banner {
+        display: inline-block;
+        font-family: 'Eagle Lake', serif;
+        font-size: 1.45rem;
+        padding: 10px 0;
+        text-align: center;
+        text-shadow: 1px 1px 2px #a64d79ff, 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(0, 0, 0);
+    }
+
+    #company-description .content {
+        font-size: 1rem;
+        color: #f5f5f5;
+        text-shadow: 1px 1px 2px #a64d79ff, 0 0 1em #f5f5f5, 0 0 0.2em #000000;
+    }
+}
+
+/*Sections*/
+.section-start {
+    position: sticky;
+    top: 70px;
+    padding: 20px;
+    width: 100%;
+    background-color: #000000;
+    color: #f5f5f5;
+    height: 60px;
+}
+
+/*Section*/
+
+.section {
+    width: 100%;
+}
+
+.section ul {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.section li {
+    flex-shrink: 1;
+    width: 310px;
+    margin: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #f5f5f5;
+}
+
+.section .image-container {
+    overflow: hidden;
+}
+
+.section .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section .content {
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/*Section Mobile*/
+
+@media only screen and (max-width: 450px) {
+    .section ul {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .section li {
+        width: 100%;
+    }
+}
+
+/*Resource*/
+
+.resource-name {
+    font-family: 'Alice', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.resource-description {
+    font-weight: 200;
+    font-size: .9rem;
+    line-height: 1.2;
+    padding: 5px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*Gallery Section*/
+
+#gallery-section .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#gallery-section .images .image-container {
+    overflow: hidden;
+    flex-shrink: 1;
+    width: 450px;
+    min-width: 300px;
+    margin: 10px;
+}
+
+#gallery-section .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Quote Section*/
+
+#quote-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 140px;
+    font-family: 'Alice', serif;
+    font-size: 1.3rem;
+    padding: 0 10%;
+}
+
+#quote-section .image-container {
+    width: 3rem;
+}
+
+#quote-section .image-container img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 760px) {
+    #quote-section {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #quote-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+
+/*Footer*/
+
+#footer {
+    height: 70px;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+/*Footer Tablet */
+
+@media only screen and (max-width: 760px) {
+    #footer {
+        height: 50px;
+        font-size: .65rem;
+        white-space: nowrap;
+    }
+}
+
+/*Footer Mobile*/
+
+@media only screen and (max-width: 450px) {
+    #footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
